@@ -16,20 +16,35 @@ The following roles can be used for managing Ubuntu and Fedora Servers. They hav
 * [ansible_ssl_azuredns](https://github.com/danmwallace/ansible_ssl_azuredns) : Configures an SSL certificate via certbot, using AzureDNS.
 
 ### Docker Roles
-These roles are used to deploy applications I use in my lab environment via Docker.
+These roles are used to deploy applications I use in my lab environment via Docker. They are broken into (2) categories - pre-requisites and application roles.
 
+#### Pre-requisites for Applications
+
+The following must be used in playbooks along with the application roles. 
 * [ansible_docker](https://github.com/danmwallace/ansible_docker) : Common role to set up the baseline pre-requisites for Docker on Ubuntu and Fedora.
-* [ansible_docker_traefik](https://github.com/danmwallace/ansible_docker_unifi) : Deploys Traefik. **All of the following roles are intended to be proxied via Traefik.**
+* [ansible_docker_traefik](https://github.com/danmwallace/ansible_docker_traefik) : Deploys Traefik. **All of the following roles are intended to be proxied via Traefik.**
+
+#### Applications
+
+* [ansible_docker_arcane](https://github.com/danmwallace/ansible_docker_arcane) : Deploys Arcane, a Modern Docker Management system(https://github.com/getarcaneapp/arcane)
+* [ansible_docker_adguard](https://github.com/danmwallace/ansible_docker_adguard) : Deploys AdGuard, a DNS ad filtering service, and a decently easy DNS server to set up in a pinch. 
 * [ansible_docker_homepage](https://github.com/danmwallace/ansible_docker_homepage) : Deploys the [Homepage application](https://gethomepage.dev)
 * [ansible_docker_it_tools](https://github.com/danmwallace/ansible_docker_it_tools) : Deploys [IT Tools](https://github.com/CorentinTh/it-tools)
 * [ansible_docker_n8n](https://github.com/danmwallace/ansible_docker_n8n) : Deploys [N8N](https://n8n.io/), an AI workflow & automation builder.
-* [ansible_docker_librechat](https://github.com/danmwallace/ansible_docker_librechat) : Deploys [LibreChat](https://www.librechat.ai/), a free and open-source AI chat solution which allows you to interact with multiple LLMs in one convenient interface.
 * [ansible_docker_unifi](https://github.com/danmwallace/ansible_docker_unifi) : Deploys a Unifi controller, based on LinuxServer.io's excellent work.
 * [ansible_docker_semaphore](https://github.com/danmwallace/ansible_docker_semaphore) : Deploys a (formerly Ansible) Semaphore, a web-based application for running and managing tasks with Ansible. Similar to Ansible Tower by Red Hat.
+* [ansible_docker_grafana](https://github.com/danmwallace/ansible_docker_grafana) : Deploys Grafana, a useful monitoring application
+
+#### Azure
+
+* [ansible_azure_arc](https://github.com/danmwallace/ansible_azure_arc) : Install Azure Arc on virtual machines for monitoring, update management, etc.
 
 ## Workstation Management Roles
 
-This is just placeholder for now. I plan to add roles intended to manage workstations here once I have some time to sort through old projects.
+### Desktop Environments
+
+* [ansible_clank_desktop](https://github.com/danmwallace/ansible_clank_desktop) : Deploy an AI-powered desktop environment, based on Ubuntu 24.04 LTS, with plans to support Fedora in the near future.
+* [ansible_fedora_hyprland](https://github.com/danmwallace/ansible_fedora_hyprland) : Installs and configures hyprland. Recommend to use Fedora server as the base for minimalism.
 
 ## Using these roles in your environment
 
