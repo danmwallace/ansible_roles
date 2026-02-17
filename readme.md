@@ -28,6 +28,7 @@ The following must be used in playbooks along with the application roles.
 
 * [ansible_docker_arcane](https://github.com/danmwallace/ansible_docker_arcane) : Deploys Arcane, a Modern Docker Management system(https://github.com/getarcaneapp/arcane)
 * [ansible_docker_adguard](https://github.com/danmwallace/ansible_docker_adguard) : Deploys AdGuard, a DNS ad filtering service, and a decently easy DNS server to set up in a pinch. 
+* [ansible_docker_baserow](https://github.com/danmwallace/ansible_docker_baserow) : Deploys Baserow, a no-code database tool. but 
 * [ansible_docker_homepage](https://github.com/danmwallace/ansible_docker_homepage) : Deploys the [Homepage application](https://gethomepage.dev)
 * [ansible_docker_it_tools](https://github.com/danmwallace/ansible_docker_it_tools) : Deploys [IT Tools](https://github.com/CorentinTh/it-tools)
 * [ansible_docker_n8n](https://github.com/danmwallace/ansible_docker_n8n) : Deploys [N8N](https://n8n.io/), an AI workflow & automation builder.
